@@ -41,4 +41,3 @@ STACK_RET stack_pop(int *pData, struct stack *pStack)
 return(eRet);
 }
 
-
