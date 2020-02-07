@@ -7,8 +7,8 @@ OBJ=test_stack.o stack.o
 %.o: %.c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
 
-stackmake: test_stack.o stack.o
-	$(CC) -o stackmake test_stack.o stack.o
+stackmake: $(OBJ)
+	$(CC) -o $@ $^ $(CFLAGS)
 
 clean:
 	rm *.o 
